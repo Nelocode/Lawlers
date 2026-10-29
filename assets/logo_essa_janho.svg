@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" width="320" height="48" fill="none">
+  <defs>
+    <style>
+      .monogram-box { fill: #0F172A; rx: 11; stroke: #1E293B; stroke-width: 1; }
+      .monogram-rim { stroke: rgba(255,255,255,0.18); stroke-width: 1; rx: 10; }
+      .letter-e { font-family: 'Newsreader', 'Playfair Display', 'Georgia', serif; font-size: 23px; font-weight: 600; fill: #FFFFFF; }
+      .letter-j { font-family: 'Newsreader', 'Playfair Display', 'Georgia', serif; font-size: 21px; font-weight: 400; font-style: italic; fill: #94A3B8; }
+      .dot-accent { fill: #059669; }
+      .brand-title { font-family: 'Newsreader', 'Playfair Display', 'Georgia', serif; font-size: 16.5px; font-weight: 700; fill: #0F172A; letter-spacing: 0.04em; }
+      .brand-subtitle { font-family: 'Inter', system-ui, sans-serif; font-size: 8px; font-weight: 600; fill: #64748B; letter-spacing: 0.14em; }
+    </style>
+  </defs>
+  <!-- Monogram Box (E & J) -->
+  <rect x="1" y="3" width="42" height="42" class="monogram-box"/>
+  <rect x="2" y="4" width="40" height="40" class="monogram-rim"/>
+  <text x="11" y="32" class="letter-e">E</text>
+  <text x="24" y="32" class="letter-j">J</text>
+  <circle cx="36" cy="14" r="2" class="dot-accent"/>
+
+  <!-- Wordmark -->
+  <text x="56" y="23" class="brand-title">ESSA, JANHO &amp; ASSOCIATES</text>
+  <text x="56" y="37" class="brand-subtitle">ABOGADAS LITIGANTES · MARIETTA, GA</text>
+</svg>
