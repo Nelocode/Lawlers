@@ -3,5 +3,3 @@
 .dockerignore
 .DS_Store
 README.md
-Dockerfile
-nginx.conf
