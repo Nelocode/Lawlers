@@ -1017,6 +1017,205 @@
   }
 
   /* ==========================================================================
+     SERVICE AREAS & JURISDICTION COVERAGE (15 Cities across Georgia)
+     ========================================================================== */
+  .service-areas-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-xl);
+    padding: clamp(1.5rem, 3.5vw, 2.5rem);
+    box-shadow: var(--shadow-card);
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .service-areas-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .service-areas-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-block-end: 0.4rem;
+  }
+
+  .service-areas-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    color: var(--brand-primary);
+    line-height: 1.2;
+    margin-block-end: 0.5rem;
+  }
+
+  .service-areas-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    max-inline-size: 60ch;
+    line-height: 1.55;
+  }
+
+  .service-areas-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.95rem;
+    border-radius: var(--radius-full);
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-light);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--brand-primary);
+    white-space: nowrap;
+    align-self: flex-start;
+  }
+
+  .service-status-dot {
+    inline-size: 8px;
+    block-size: 8px;
+    border-radius: 50%;
+    background: var(--status-active);
+  }
+
+  .service-areas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 54rem) {
+    .service-areas-grid {
+      grid-template-columns: 0.8fr 1.2fr;
+    }
+  }
+
+  .service-tier-box {
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .service-tier-box--core {
+    background: #FFFFFF;
+    border: 1px solid var(--border-card);
+    box-shadow: inset 0 1px 0 #FFFFFF, var(--shadow-sm);
+  }
+
+  .service-tier-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .tier-indicator {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--brand-primary);
+  }
+
+  .tier-meta {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .service-cities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .city-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-size: 0.8125rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+
+  .service-tier-box--core .city-pill {
+    background: var(--bg-card-subtle);
+    border-color: var(--border-card);
+  }
+
+  .city-pill--headquarters {
+    background: var(--brand-primary) !important;
+    color: #FFFFFF !important;
+    border-color: var(--brand-primary) !important;
+    font-weight: 600;
+  }
+
+  .city-pin-icon {
+    inline-size: 14px;
+    block-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .city-bullet {
+    font-size: 0.625rem;
+    color: var(--status-active);
+  }
+
+  .hq-badge {
+    font-size: 0.6875rem;
+    padding: 0.1rem 0.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .service-areas-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block-start: 1.25rem;
+    border-block-start: 1px solid var(--border-light);
+  }
+
+  .service-notice {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    max-inline-size: 65ch;
+  }
+
+  .notice-icon {
+    inline-size: 18px;
+    block-size: 18px;
+    color: var(--brand-accent);
+    flex-shrink: 0;
+  }
+
+  /* ==========================================================================
      SEGMENTED TABS (Horizontally scrollable on mobile, zero line breaks)
      ========================================================================== */
   .segmented-tabs-wrapper {
@@ -1484,6 +1683,34 @@
     background: var(--bg-card-subtle);
     border: 1px solid var(--border-light);
     color: var(--text-secondary);
+  }
+
+  .footer-service-areas-bar {
+    margin-block: 2.5rem 1.5rem;
+    padding-block: 1.25rem;
+    border-block: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-service-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+
+  .footer-cities-tags {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+  }
+
+  .footer-cities-tags span {
+    color: var(--text-primary);
+    font-weight: 500;
   }
 
   .footer-bottom {
